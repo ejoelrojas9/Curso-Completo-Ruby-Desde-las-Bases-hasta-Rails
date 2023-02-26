@@ -24,16 +24,28 @@ class ListApp
         puts "Que deseas agregar?"
         item = gets.chomp
         @list.add_item(item)
+        50.times { print "-" }
+        puts "\n #{item} a sido agregado a la lista de compras \n"
+        50.times { print "-" }
+        puts "\n"
       when 'r'
         puts "Numero del articulo que deseas remover"
         index = gets.chomp
-        @list.remove_item(index.to_i)
+        item = @list.remove_item(index.to_i)
+        50.times { print "-" }
+        puts "\n#{item.text} fue removido de la lista de compras"
+        50.times { print "-" }
+        puts "\n"
       when 'v'
         @list.show_all
       when 'm'
         puts "Numero del articulo que deseas marcar"
         index = gets.chomp
-        @list.check_item(index.to_i)
+        item = @list.check_item(index.to_i)
+        50.times { print "-" }
+        puts "\n#{item.text} ha sido marcado"
+        50.times { print "-" }
+        puts "\n"
       when 'b'
         puts "Deseas remover todos los articulos s/n"
         input = gets.chomp
@@ -45,6 +57,11 @@ class ListApp
         end
       when 's'
       break
+      else
+        50.times { print "-" }
+        puts "\n Operación no reconocida \n"
+        50.times { print "-" }
+        puts "\n"
       end
     end
     puts "Gracias por utilizar nuestra aplicación "
