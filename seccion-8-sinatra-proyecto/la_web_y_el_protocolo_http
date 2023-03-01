@@ -1,0 +1,13 @@
+HTTP - PROTOCOLO DE TRANSPORTE DE HIPERTEXTO
+
+- Es un estandar que dice como las computadoras se comunican a traves de la worl wide web
+- Define varios metodos que indican cual es la accion a realizarse con una peticion en particular
+
+METODOS HTTP
+
+- Post - Agregar un recurso
+- Get - Obtenr un recurso
+- Put - Modificar un recurso
+- Delete - Borrar un recurso
+- Y más
+
